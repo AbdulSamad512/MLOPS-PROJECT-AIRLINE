@@ -1,0 +1,110 @@
+2025-03-20 00:32:48,200 - INFO - Data Ingestion has started
+2025-03-20 00:32:48,200 - INFO - Directory for Ingestion created
+2025-03-20 00:32:48,537 - INFO - Data loaded successfully with shape: (103904, 25)
+2025-03-20 00:32:48,578 - INFO - Data Splitted Sucessfully
+2025-03-20 00:32:49,503 - INFO - Training and testing data saved sucesffuly
+2025-03-20 11:42:49,130 - INFO - Starting the pipeline of Data Procesing
+2025-03-20 11:42:49,130 - INFO - Data Processinng Started
+2025-03-20 11:42:49,407 - INFO - Data read succesfull : Data shape : (83123, 25)
+2025-03-20 11:42:49,407 - INFO - Dropping Unnecesary Columns :  ['MyUnknownColumn', 'id']
+2025-03-20 11:42:49,415 - ERROR - Problem while dropping columns
+2025-03-20 11:42:49,416 - ERROR - Error ocuured in Data Processing Pipleine : Error in C:\Users\Tesla Laptops\Desktop\Airline\src\data_processing.py, line 28: Error while sropping columns : 
+2025-03-20 11:47:02,688 - INFO - Starting the pipeline of Data Procesing
+2025-03-20 11:47:02,688 - INFO - Data Processinng Started
+2025-03-20 11:47:02,947 - INFO - Data read succesfull : Data shape : (83123, 25)
+2025-03-20 11:47:02,947 - INFO - Dropping Unnecesary Columns :  ['MyUnknownColumn', 'id']
+2025-03-20 11:47:02,947 - ERROR - Problem while dropping columns
+2025-03-20 11:47:02,947 - ERROR - Error ocuured in Data Processing Pipleine : Error in C:\Users\Tesla Laptops\Desktop\Airline\src\data_processing.py, line 28: Error while sropping columns : 
+2025-03-20 11:49:33,986 - INFO - Starting the pipeline of Data Procesing
+2025-03-20 11:49:33,986 - INFO - Data Processinng Started
+2025-03-20 11:49:34,210 - INFO - Data read succesfull : Data shape : (83123, 25)
+2025-03-20 11:49:34,210 - INFO - Dropping Unnecesary Columns :  ['MyUnknownColumn', 'id']
+2025-03-20 11:49:34,210 - ERROR - Problem while dropping columns
+2025-03-20 11:49:34,210 - ERROR - Error ocuured in Data Processing Pipleine : Error in C:\Users\Tesla Laptops\Desktop\Airline\src\data_processing.py, line 28: Error while sropping columns : 
+2025-03-20 11:53:33,232 - INFO - Starting the pipeline of Data Procesing
+2025-03-20 11:53:33,233 - INFO - Data Processinng Started
+2025-03-20 11:53:33,491 - INFO - Data read succesfull : Data shape : (83123, 25)
+2025-03-20 11:53:33,491 - INFO - Dropping Unnecessary Columns: ['MyUnknownColumn', 'id']
+2025-03-20 11:53:33,503 - INFO - Columns dropped successfully: Shape = (83123, 24)
+2025-03-20 11:53:33,505 - INFO - Handling outliers : Columns = ['Flight Distance', 'Departure Delay in Minutes', 'Arrival Delay in Minutes', 'Checkin service']
+2025-03-20 11:53:33,538 - INFO - Outliers handled  Sucesffuully : (83123, 24)
+2025-03-20 11:53:33,538 - INFO - Handling null values
+2025-03-20 11:53:33,541 - INFO - Missing values handled sucessfully : Shape == (83123, 24)
+2025-03-20 11:53:34,290 - INFO - Processed data saved sucesfully
+2025-03-20 11:53:34,290 - INFO - Data Proccesing Pipeline COmpleted Sucessfully
+2025-03-20 12:28:36,977 - INFO - Starting your feature enginnering pipeline
+2025-03-20 12:28:36,977 - INFO - Loading data
+2025-03-20 12:28:37,248 - INFO - Data loaded sucesffuly
+2025-03-20 12:28:37,248 - INFO - Starting Feature Construction
+2025-03-20 12:28:37,252 - INFO - Feature Construction done sucesfully
+2025-03-20 12:28:37,252 - INFO - Starting Binning of Age Column
+2025-03-20 12:28:37,260 - INFO - Binning of Age Column Sucesfull
+2025-03-20 12:28:37,260 - INFO - Performing label encoding on ['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Age Group']
+2025-03-20 12:28:37,340 - INFO - Mapping for Gender : {'Female': np.int64(0), 'Male': np.int64(1)}
+2025-03-20 12:28:37,340 - INFO - Mapping for Customer Type : {'Loyal Customer': np.int64(0), 'disloyal Customer': np.int64(1)}
+2025-03-20 12:28:37,341 - INFO - Mapping for Type of Travel : {'Business travel': np.int64(0), 'Personal Travel': np.int64(1)}
+2025-03-20 12:28:37,341 - INFO - Mapping for Class : {'Business': np.int64(0), 'Eco': np.int64(1), 'Eco Plus': np.int64(2)}
+2025-03-20 12:28:37,341 - INFO - Mapping for satisfaction : {'neutral or dissatisfied': np.int64(0), 'satisfied': np.int64(1)}
+2025-03-20 12:28:37,341 - INFO - Mapping for Age Group : {'Adult': np.int64(0), 'Child': np.int64(1), 'Senior': np.int64(2), 'Youngster': np.int64(3)}
+2025-03-20 12:28:37,341 - INFO - Label Encoding sucesffull
+2025-03-20 12:28:37,341 - INFO - Starting Feature Selection
+2025-03-20 12:28:37,812 - INFO - Mutual Information Table is : 
+                              Feature  Mutual Information
+0                            Column 0            0.684536
+12                    Online boarding            0.209974
+24                        Delay Ratio            0.201387
+7               Inflight wifi service            0.161598
+5                               Class            0.134018
+4                      Type of Travel            0.114063
+14             Inflight entertainment            0.092257
+6                     Flight Distance            0.089496
+13                       Seat comfort            0.078356
+16                   Leg room service            0.059960
+15                   On-board service            0.056868
+9              Ease of Online booking            0.051305
+20                        Cleanliness            0.051250
+3                                 Age            0.046213
+17                   Baggage handling            0.043526
+19                   Inflight service            0.040798
+18                    Checkin service            0.032267
+11                     Food and drink            0.025747
+25                          Age Group            0.021461
+2                       Customer Type            0.018146
+10                      Gate location            0.012208
+22           Arrival Delay in Minutes            0.006715
+23                        Total Delay            0.005575
+21         Departure Delay in Minutes            0.002802
+8   Departure Arrival time convenient            0.002265
+1                              Gender            0.000097
+2025-03-20 12:28:37,822 - INFO - Top features : ['Column 0', 'Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Ease of Online booking']
+2025-03-20 12:28:37,822 - INFO - Feature Selection Sucesfull
+2025-03-20 12:28:37,826 - INFO - Saving your data ...
+2025-03-20 12:28:38,295 - INFO - Data Saved succesfully at ./artifacts\engineered_data\final_df.csv
+2025-03-20 12:28:38,295 - INFO - Your FE pipeline sucesfully done..
+2025-03-20 12:28:38,296 - INFO - End of FE pipeline
+2025-03-20 17:35:01,019 - INFO - Starting ModelSelection pipeline
+2025-03-20 17:35:01,020 - INFO - Loading CSV file
+2025-03-20 17:35:01,237 - INFO - Data loaded and sampled sucesfully
+2025-03-20 17:35:01,240 - INFO - Splitting data
+2025-03-20 17:35:01,247 - INFO - Training and evalation started
+2025-03-20 17:35:01,431 - INFO - Logistic Regression trained sucesfullyMetrics : Accuracy : 0.820204449789537 , Precision : 0.8203663624554226 , Recall : 0.820204449789537 , F1 Score : 0.8202779225881327
+2025-03-20 17:35:01,686 - ERROR - Error in the pipeline
+2025-03-20 23:52:35,417 - INFO - Starting ModelSelection pipeline
+2025-03-20 23:52:35,418 - INFO - Loading CSV file
+2025-03-20 23:52:35,547 - INFO - Data loaded and sampled successfully
+2025-03-20 23:52:35,549 - INFO - Splitting data
+2025-03-20 23:52:35,561 - INFO - Training and evaluation started
+2025-03-20 23:52:35,607 - INFO - Logistic Regression trained successfully with Accuracy: 0.8490679494888755, Precision: 0.8487581748829578, Recall: 0.8490679494888755, F1 Score: 0.8486847315355791
+2025-03-20 23:52:36,224 - INFO - Random Forest trained successfully with Accuracy: 0.9338544798556825, Precision: 0.9340004621849012, Recall: 0.9338544798556825, F1 Score: 0.9336934228251115
+2025-03-20 23:52:37,188 - INFO - Gradient Boosting trained successfully with Accuracy: 0.9242333132892363, Precision: 0.9243700670721756, Recall: 0.9242333132892363, F1 Score: 0.9240329928563477
+2025-03-20 23:52:37,728 - INFO - AdaBoost trained successfully with Accuracy: 0.9110042092603728, Precision: 0.9109320344544379, Recall: 0.9110042092603728, F1 Score: 0.9108591473293299
+2025-03-20 23:52:39,199 - INFO - Support Vector Classifier trained successfully with Accuracy: 0.9224293445580276, Precision: 0.9223744941574166, Recall: 0.9224293445580276, F1 Score: 0.9223253249942462
+2025-03-20 23:52:39,625 - INFO - K-Nearest Neighbors trained successfully with Accuracy: 0.9025856885147324, Precision: 0.9031011478821233, Recall: 0.9025856885147324, F1 Score: 0.9021310951517084
+2025-03-20 23:52:39,705 - INFO - Naive Bayes trained successfully with Accuracy: 0.8448586891160553, Precision: 0.8445270242014447, Recall: 0.8448586891160553, F1 Score: 0.8444485091820452
+2025-03-20 23:52:39,810 - INFO - Decision Tree trained successfully with Accuracy: 0.899579073962718, Precision: 0.8996776266132803, Recall: 0.899579073962718, F1 Score: 0.8996201106094253
+2025-03-20 23:52:40,647 - INFO - LightGBM trained successfully with Accuracy: 0.9356584485868912, Precision: 0.9357919148819954, Recall: 0.9356584485868912, F1 Score: 0.9355084330343777
+2025-03-20 23:52:41,008 - INFO - XGBoost trained successfully with Accuracy: 0.9284425736620565, Precision: 0.9285388715619759, Recall: 0.9284425736620565, F1 Score: 0.9282757339354293
+2025-03-20 23:52:41,122 - INFO - ModelSelection pipeline completed successfully
+2025-03-20 23:58:01,114 - INFO - Starting ModelSelection pipeline
+2025-03-20 23:58:01,115 - INFO - Loading CSV file
+2025-03-20 23:58:01,116 - ERROR - Error in the pipeline

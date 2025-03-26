@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: mlops
+Version: 0.1
+Summary: MLOPS PROJECT
+Author: Abdul Samad
+Author-email: abdul.samad.ali.abbasi.r678@gmail.com
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: setuptools
+Requires-Dist: scikit-learn
+Requires-Dist: lightgbm
+Requires-Dist: xgboost
+Requires-Dist: matplotlib
+Requires-Dist: mlflow
+Requires-Dist: flask
+Requires-Dist: pylint
+Requires-Dist: flake8
+Requires-Dist: black
+Requires-Dist: tensorboard
+Requires-Dist: mlflow
+Requires-Dist: standard-imghdr
+Requires-Dist: dvc
+Requires-Dist: flask
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

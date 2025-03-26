@@ -1,0 +1,11 @@
+2025-03-19 17:25:37,869 - INFO - Your database configuration has been set up.
+2025-03-19 17:29:50,722 - INFO - Your database configuration has been set up.
+2025-03-19 17:32:40,254 - INFO - Your database configuration has been set up.
+2025-03-19 17:32:40,290 - ERROR - \u274c Error extracting data from DB: \u274c Error while connecting to the database: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (DESKTOP-HN3L1F4)\nDB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (DESKTOP-HN3L1F4)\n')
+2025-03-19 17:34:18,940 - INFO - Your database configuration has been set up.
+2025-03-19 17:34:18,992 - ERROR - \u274c Error extracting data from DB: \u274c Error while connecting to the database: (20009, b'DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (DESKTOP-HN3L1F4)\nDB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (DESKTOP-HN3L1F4)\n')
+2025-03-19 17:40:37,499 - INFO - \u2705 Database configuration has been set up.
+2025-03-19 17:40:37,640 - INFO - \u2705 Successfully connected to the database.
+2025-03-19 17:40:39,624 - INFO - \u2705 Data fetched successfully! Rows: 103904
+2025-03-19 17:40:40,068 - INFO - \u2705 Data successfully saved to ./artifacts/raw\data.csv
+2025-03-19 17:40:40,071 - INFO - \u2705 Disconnected from the database.

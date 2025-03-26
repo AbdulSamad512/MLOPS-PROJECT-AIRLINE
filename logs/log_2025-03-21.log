@@ -1,0 +1,155 @@
+2025-03-21 00:00:19,075 - INFO - Starting ModelSelection pipeline
+2025-03-21 00:00:19,076 - INFO - Loading CSV file
+2025-03-21 00:00:19,083 - ERROR - Error in the pipeline
+2025-03-21 00:01:59,331 - INFO - Starting ModelSelection pipeline
+2025-03-21 00:01:59,331 - INFO - Loading CSV file
+2025-03-21 00:01:59,331 - ERROR - Error in the pipeline: Error in C:\Users\Tesla Laptops\Desktop\Airline\src\model_selection.py, line 48: Error while loading data: File not found at ./artifacts\engineered_data\final_df.csv
+2025-03-21 00:08:06,514 - INFO - Starting ModelSelection pipeline
+2025-03-21 00:08:06,514 - INFO - Loading CSV file
+2025-03-21 00:08:06,523 - ERROR - File not found at ./artifacts\engineered_data\final_df.csv
+2025-03-21 00:08:06,523 - ERROR - Error in the pipeline
+2025-03-21 00:10:16,053 - INFO - Starting ModelSelection pipeline
+2025-03-21 00:10:16,054 - INFO - Loading CSV file
+2025-03-21 00:10:16,054 - ERROR - File not found at ./artifacts\engineered_data\final_df.csv
+2025-03-21 00:10:16,054 - ERROR - Error in the pipeline
+2025-03-21 00:11:45,947 - INFO - Starting your feature enginnering pipeline
+2025-03-21 00:11:45,947 - INFO - Loading data
+2025-03-21 00:11:46,210 - INFO - Data loaded sucesffuly
+2025-03-21 00:11:46,210 - INFO - Starting Feature Construction
+2025-03-21 00:11:46,215 - INFO - Feature Construction done sucesfully
+2025-03-21 00:11:46,215 - INFO - Starting Binning of Age Column
+2025-03-21 00:11:46,223 - INFO - Binning of Age Column Sucesfull
+2025-03-21 00:11:46,223 - INFO - Performing label encoding on ['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Age Group']
+2025-03-21 00:11:46,363 - INFO - Mapping for Gender : {'Female': np.int64(0), 'Male': np.int64(1)}
+2025-03-21 00:11:46,363 - INFO - Mapping for Customer Type : {'Loyal Customer': np.int64(0), 'disloyal Customer': np.int64(1)}
+2025-03-21 00:11:46,363 - INFO - Mapping for Type of Travel : {'Business travel': np.int64(0), 'Personal Travel': np.int64(1)}
+2025-03-21 00:11:46,363 - INFO - Mapping for Class : {'Business': np.int64(0), 'Eco': np.int64(1), 'Eco Plus': np.int64(2)}
+2025-03-21 00:11:46,364 - INFO - Mapping for satisfaction : {'neutral or dissatisfied': np.int64(0), 'satisfied': np.int64(1)}
+2025-03-21 00:11:46,364 - INFO - Mapping for Age Group : {'Adult': np.int64(0), 'Child': np.int64(1), 'Senior': np.int64(2), 'Youngster': np.int64(3)}
+2025-03-21 00:11:46,364 - INFO - Label Encoding sucesffull
+2025-03-21 00:11:46,364 - INFO - Starting Feature Selection
+2025-03-21 00:11:46,809 - INFO - Mutual Information Table is : 
+                              Feature  Mutual Information
+0                            Column 0            0.684536
+12                    Online boarding            0.209974
+24                        Delay Ratio            0.201387
+7               Inflight wifi service            0.161598
+5                               Class            0.134018
+4                      Type of Travel            0.114063
+14             Inflight entertainment            0.092257
+6                     Flight Distance            0.089496
+13                       Seat comfort            0.078356
+16                   Leg room service            0.059960
+15                   On-board service            0.056868
+9              Ease of Online booking            0.051305
+20                        Cleanliness            0.051250
+3                                 Age            0.046213
+17                   Baggage handling            0.043526
+19                   Inflight service            0.040798
+18                    Checkin service            0.032267
+11                     Food and drink            0.025747
+25                          Age Group            0.021461
+2                       Customer Type            0.018146
+10                      Gate location            0.012208
+22           Arrival Delay in Minutes            0.006715
+23                        Total Delay            0.005575
+21         Departure Delay in Minutes            0.002802
+8   Departure Arrival time convenient            0.002265
+1                              Gender            0.000097
+2025-03-21 00:11:46,817 - INFO - Top features : ['Column 0', 'Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Ease of Online booking']
+2025-03-21 00:11:46,818 - INFO - Feature Selection Sucesfull
+2025-03-21 00:11:46,821 - INFO - Saving your data ...
+2025-03-21 00:11:47,203 - INFO - Data Saved succesfully at ./artifacts\engineered_data\final_df.csv
+2025-03-21 00:11:47,203 - INFO - Your FE pipeline sucesfully done..
+2025-03-21 00:11:47,203 - INFO - End of FE pipeline
+2025-03-21 00:12:31,005 - INFO - Starting ModelSelection pipeline
+2025-03-21 00:12:31,005 - INFO - Loading CSV file
+2025-03-21 00:12:31,105 - INFO - Data loaded and sampled successfully
+2025-03-21 00:12:31,106 - INFO - Splitting data
+2025-03-21 00:12:31,109 - INFO - Training and evaluation started
+2025-03-21 00:12:31,213 - INFO - Logistic Regression trained successfully Metrics: Accuracy: 0.820204449789537, Precision: 0.8203663624554226, Recall: 0.820204449789537, F1 Score: 0.8202779225881327
+2025-03-21 00:12:31,360 - ERROR - Error in the pipeline
+2025-03-21 00:30:25,080 - INFO - Starting the pipeline of Data Procesing
+2025-03-21 00:30:25,080 - INFO - Data Processinng Started
+2025-03-21 00:30:25,355 - INFO - Data read succesfull : Data shape : (83123, 25)
+2025-03-21 00:30:25,355 - INFO - Dropping Unnecessary Columns: ['MyUnknownColumn', 'id']
+2025-03-21 00:30:25,367 - INFO - Columns dropped successfully: Shape = (83123, 24)
+2025-03-21 00:30:25,370 - INFO - Handling outliers : Columns = ['Flight Distance', 'Departure Delay in Minutes', 'Arrival Delay in Minutes', 'Checkin service']
+2025-03-21 00:30:25,401 - INFO - Outliers handled  Sucesffuully : (83123, 24)
+2025-03-21 00:30:25,401 - INFO - Handling null values
+2025-03-21 00:30:25,405 - INFO - Missing values handled sucessfully : Shape == (83123, 24)
+2025-03-21 00:30:26,071 - INFO - Processed data saved sucesfully
+2025-03-21 00:30:26,072 - INFO - Data Proccesing Pipeline COmpleted Sucessfully
+2025-03-21 00:31:04,378 - INFO - Starting your feature enginnering pipeline
+2025-03-21 00:31:04,379 - INFO - Loading data
+2025-03-21 00:31:04,604 - INFO - Data loaded sucesffuly
+2025-03-21 00:31:04,605 - INFO - Starting Feature Construction
+2025-03-21 00:31:04,608 - INFO - Feature Construction done sucesfully
+2025-03-21 00:31:04,608 - INFO - Starting Binning of Age Column
+2025-03-21 00:31:04,612 - INFO - Binning of Age Column Sucesfull
+2025-03-21 00:31:04,612 - INFO - Performing label encoding on ['Gender', 'Customer Type', 'Type of Travel', 'Class', 'satisfaction', 'Age Group']
+2025-03-21 00:31:04,720 - INFO - Mapping for Gender : {'Female': np.int64(0), 'Male': np.int64(1)}
+2025-03-21 00:31:04,721 - INFO - Mapping for Customer Type : {'Loyal Customer': np.int64(0), 'disloyal Customer': np.int64(1)}
+2025-03-21 00:31:04,721 - INFO - Mapping for Type of Travel : {'Business travel': np.int64(0), 'Personal Travel': np.int64(1)}
+2025-03-21 00:31:04,721 - INFO - Mapping for Class : {'Business': np.int64(0), 'Eco': np.int64(1), 'Eco Plus': np.int64(2)}
+2025-03-21 00:31:04,721 - INFO - Mapping for satisfaction : {'neutral or dissatisfied': np.int64(0), 'satisfied': np.int64(1)}
+2025-03-21 00:31:04,721 - INFO - Mapping for Age Group : {'Adult': np.int64(0), 'Child': np.int64(1), 'Senior': np.int64(2), 'Youngster': np.int64(3)}
+2025-03-21 00:31:04,721 - INFO - Label Encoding sucesffull
+2025-03-21 00:31:04,721 - INFO - Starting Feature Selection
+2025-03-21 00:31:05,146 - INFO - Mutual Information Table is : 
+                              Feature  Mutual Information
+0                            Column 0            0.684536
+12                    Online boarding            0.209974
+24                        Delay Ratio            0.201387
+7               Inflight wifi service            0.161598
+5                               Class            0.134018
+4                      Type of Travel            0.114063
+14             Inflight entertainment            0.092257
+6                     Flight Distance            0.089496
+13                       Seat comfort            0.078356
+16                   Leg room service            0.059960
+15                   On-board service            0.056868
+9              Ease of Online booking            0.051305
+20                        Cleanliness            0.051250
+3                                 Age            0.046213
+17                   Baggage handling            0.043526
+19                   Inflight service            0.040798
+18                    Checkin service            0.032267
+11                     Food and drink            0.025747
+25                          Age Group            0.021461
+2                       Customer Type            0.018146
+10                      Gate location            0.012208
+22           Arrival Delay in Minutes            0.006715
+23                        Total Delay            0.005575
+21         Departure Delay in Minutes            0.002802
+8   Departure Arrival time convenient            0.002265
+1                              Gender            0.000097
+2025-03-21 00:31:05,152 - INFO - Top features : ['Column 0', 'Online boarding', 'Delay Ratio', 'Inflight wifi service', 'Class', 'Type of Travel', 'Inflight entertainment', 'Flight Distance', 'Seat comfort', 'Leg room service', 'On-board service', 'Ease of Online booking']
+2025-03-21 00:31:05,152 - INFO - Feature Selection Sucesfull
+2025-03-21 00:31:05,156 - INFO - Saving your data ...
+2025-03-21 00:31:05,535 - INFO - Data Saved succesfully at ./artifacts\engineered_data\final_df.csv
+2025-03-21 00:31:05,535 - INFO - Your FE pipeline sucesfully done..
+2025-03-21 00:31:05,535 - INFO - End of FE pipeline
+2025-03-21 00:31:16,023 - INFO - Starting ModelSelection pipeline
+2025-03-21 00:31:16,024 - INFO - Loading CSV file
+2025-03-21 00:31:16,163 - INFO - Data loaded and sampled successfully
+2025-03-21 00:31:16,164 - INFO - Splitting data
+2025-03-21 00:31:16,167 - INFO - Training and evaluation started
+2025-03-21 00:31:16,250 - INFO - Logistic Regression trained successfully Metrics: Accuracy: 0.820204449789537, Precision: 0.8203663624554226, Recall: 0.820204449789537, F1 Score: 0.8202779225881327
+2025-03-21 00:31:16,345 - ERROR - Error in the pipeline
+2025-03-21 00:34:18,293 - INFO - Starting ModelSelection pipeline
+2025-03-21 00:34:18,293 - INFO - Loading CSV file
+2025-03-21 00:34:18,411 - INFO - Data loaded and sampled successfully
+2025-03-21 00:34:18,412 - INFO - Scaling and splitting data
+2025-03-21 00:34:18,419 - INFO - Training and evaluating models
+2025-03-21 00:34:18,438 - INFO - Logistic Regression Metrics: Accuracy: 0.8490679494888755, Precision: 0.8487581748829578, Recall: 0.8490679494888755, F1 Score: 0.8486847315355791
+2025-03-21 00:34:18,820 - INFO - Random Forest Metrics: Accuracy: 0.9326518340348767, Precision: 0.9326817943907019, Recall: 0.9326518340348767, F1 Score: 0.9325288195926504
+2025-03-21 00:34:19,762 - INFO - Gradient Boosting Metrics: Accuracy: 0.9242333132892363, Precision: 0.9243700670721756, Recall: 0.9242333132892363, F1 Score: 0.9240329928563477
+2025-03-21 00:34:20,243 - INFO - AdaBoost Metrics: Accuracy: 0.9110042092603728, Precision: 0.9109320344544379, Recall: 0.9110042092603728, F1 Score: 0.9108591473293299
+2025-03-21 00:34:21,398 - INFO - Support Vector Classifier Metrics: Accuracy: 0.9224293445580276, Precision: 0.9223744941574166, Recall: 0.9224293445580276, F1 Score: 0.9223253249942462
+2025-03-21 00:34:21,810 - INFO - K-Nearest Neighbors Metrics: Accuracy: 0.9037883343355382, Precision: 0.9043170436254266, Recall: 0.9037883343355382, F1 Score: 0.9033393532362554
+2025-03-21 00:34:21,889 - INFO - Naive Bayes Metrics: Accuracy: 0.8448586891160553, Precision: 0.8445270242014447, Recall: 0.8448586891160553, F1 Score: 0.8444485091820452
+2025-03-21 00:34:22,003 - INFO - Decision Tree Metrics: Accuracy: 0.894167167769092, Precision: 0.8943455150976255, Recall: 0.894167167769092, F1 Score: 0.8942353965651761
+2025-03-21 00:34:22,664 - INFO - LightGBM Metrics: Accuracy: 0.9356584485868912, Precision: 0.9357513490258867, Recall: 0.9356584485868912, F1 Score: 0.9355215804859935
+2025-03-21 00:34:23,014 - INFO - XGBoost Metrics: Accuracy: 0.9284425736620565, Precision: 0.9285388715619759, Recall: 0.9284425736620565, F1 Score: 0.9282757339354293
+2025-03-21 00:34:23,147 - INFO - Pipeline completed successfully

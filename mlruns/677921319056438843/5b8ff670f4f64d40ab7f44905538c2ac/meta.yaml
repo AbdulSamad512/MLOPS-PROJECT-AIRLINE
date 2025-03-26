@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Tesla%20Laptops/Desktop/Airline/mlruns/677921319056438843/5b8ff670f4f64d40ab7f44905538c2ac/artifacts
+end_time: 1742676644188
+entry_point_name: ''
+experiment_id: '677921319056438843'
+lifecycle_stage: active
+run_id: 5b8ff670f4f64d40ab7f44905538c2ac
+run_name: receptive-mule-891
+run_uuid: 5b8ff670f4f64d40ab7f44905538c2ac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742676413124
+status: 3
+tags: []
+user_id: Tesla Laptops

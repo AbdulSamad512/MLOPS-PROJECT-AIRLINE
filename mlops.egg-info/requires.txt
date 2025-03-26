@@ -1,0 +1,17 @@
+numpy
+pandas
+setuptools
+scikit-learn
+lightgbm
+xgboost
+matplotlib
+mlflow
+flask
+pylint
+flake8
+black
+tensorboard
+mlflow
+standard-imghdr
+dvc
+flask
