@@ -3,8 +3,8 @@ pipeline {
     
     environment {
         DOCKER_IMAGE = 'mlops-airline:latest'
-        DOCKER_USERNAME = credentials('dockerhub-username')
-        DOCKER_PASSWORD = credentials('dockerhub-password')
+        DOCKER_USERNAME = credentials('dockerhub-AbdulSamad')
+        DOCKER_PASSWORD = credentials('dockerhub-Abdul8bpyt')
         REPO_URL = 'https://github.com/AbdulSamad512/MLOPS-PROJECT-AIRLINE.git'
         GITHUB_CREDENTIALS = 'mlops-github-tokens'
     }
